@@ -1,5 +1,8 @@
+// O(V+E)
+
 #include<bits/stdc++.h>
 using namespace std;
+
 void find_bridges_helper(int v,vector<int> &visited,vector<int> &init_time,vector<int> &low_time,vector<pair<int,int>> &bridges,vector<vector<int>> &adj_list,int parent,int &timer){
     init_time[v]=low_time[v]=timer++;
     visited[v]=1;
